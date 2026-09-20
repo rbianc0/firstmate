@@ -1,0 +1,13 @@
+$ bin/fm-verification-skill-check.sh .../live-fixture/verify-demo
+ok: .../live-fixture/verify-demo has the required verification-skill shape
+[exit 0]
+
+$ bin/fm-verification-skill-check.sh .../live-fixture/verify-duplicate
+FAIL: SKILL.md frontmatter has multiple name: fields
+fm-verification-skill-check: 1 failure(s) in .../live-fixture/verify-duplicate
+[exit 1]
+
+$ bin/fm-verification-skill-check.sh .../live-fixture/verify-unsafe
+FAIL: Cleanup section must state the rule: never kill by process name; kill what you started
+fm-verification-skill-check: 1 failure(s) in .../live-fixture/verify-unsafe
+[exit 1]
